@@ -1,0 +1,14 @@
+[project]
+name = 'pyresistance'
+description = 'A FastAPI application following the blog post from @textbook. Details: https://blog.jonrshar.pe/2024/Aug/17/python-tdd-ohm.html'
+version = '0.0.1'
+readme = "README.md"
+dependencies = [
+    "fastapi[standard]"
+]
+requires-python = ">=3.12"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest~=8.3",
+]
