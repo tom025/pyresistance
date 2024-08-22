@@ -8,6 +8,44 @@ This project uses [uv](https://docs.astral.sh/uv/) as a package manager. To inst
 
 To synchronize dependencies run
 
-```commandline
+```shell
 uv sync
+```
+
+This will create an isolated virtual environment under `.venv` and install all the required production and dev packages.
+
+## Development ##
+
+To ensure commands/scripts run in the virtual environment, either activate it
+
+```shell
+source .venv/bin/activate
+```
+
+or prefix the command/script with `uv run`. For example
+
+```shell
+uv run pytest
+```
+
+### Run tests ###
+
+```shell
+pytest
+```
+
+will run all tests.
+
+### Format code ###
+
+```shell
+ruff format
+```
+
+will fix any code formatting issues
+
+### Lint code ###
+
+```shell
+ruff lint
 ```
