@@ -332,6 +332,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "httpx" },
     { name = "pytest" },
 ]
 
@@ -339,7 +340,10 @@ dev = [
 requires-dist = [{ name = "fastapi", extras = ["standard"] }]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = "~=8.3" }]
+dev = [
+    { name = "httpx" },
+    { name = "pytest", specifier = "~=8.3" },
+]
 
 [[package]]
 name = "pytest"
