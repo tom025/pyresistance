@@ -28,6 +28,16 @@ or prefix the command/script with `uv run`. For example
 uv run pytest
 ```
 
+### Install git hooks ###
+
+Git hook integration is done using [pre-commit](https://pre-commit.com).
+
+```shell
+pre-commit install
+```
+
+will install git hooks to `.git/hooks`.
+
 ### Run tests ###
 
 ```shell

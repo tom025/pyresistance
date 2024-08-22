@@ -1,0 +1,15 @@
+repos:
+  - repo: local
+    hooks:
+      - id: lint
+        name: lint
+        language: script
+        entry: .venv/bin/ruff check --force-exclude
+        types_or: [python]
+        require_serial: true
+      - id: format
+        name: format
+        language: script
+        entry: .venv/bin/ruff format --force-exclude
+        types_or: [python]
+        require_serial: true
